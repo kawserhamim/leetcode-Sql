@@ -1,7 +1,4 @@
 -- Write your PostgreSQL query statement below
-SELECT 
-    B.product_name,
-    A.year,
-    A.price
-FROM Sales A
-LEFT JOIN Product B ON A.product_id = B.product_id;
+select p.product_name , s.year , s.price 
+from sales s inner join 
+product p on s.product_id = p.product_id ;
